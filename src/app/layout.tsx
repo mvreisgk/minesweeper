@@ -1,5 +1,5 @@
+import { FC, ReactNode } from 'react'
 import './globals.css'
-import { ReactNode, FC } from 'react'
 
 export const metadata = {
   title: 'Minesweeper',

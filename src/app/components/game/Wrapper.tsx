@@ -3,7 +3,7 @@ import Header from './Header'
 
 const Wrapper: FC = () => (
   <main className="flex h-screen w-screen items-center justify-center bg-black p-2">
-    <section className="flex h-full w-3/4 items-center justify-center bg-white">
+    <section className="flex h-full w-3/4 items-center justify-center bg-sky-400">
       <Header />
     </section>
   </main>
