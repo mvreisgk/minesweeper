@@ -1,1 +1,5 @@
-export interface IContext {}
+export interface IContext {
+  time: Date
+  flags: number
+  remainingBombs: number
+}
