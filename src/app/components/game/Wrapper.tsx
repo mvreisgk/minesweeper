@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import Grid from './Grid'
-import Header from './Header'
+import Grid from '@/app/components/game/Grid'
+import Header from '@/app/components/game/Header'
 
 const Wrapper: FC = () => (
   <main className="flex h-screen w-screen items-center justify-center bg-black p-2">
