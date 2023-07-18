@@ -17,6 +17,14 @@ const Header: FC = () => {
     }
   }, [setTime, time])
 
+  const milliseconds = time / 1000
+  const seconds = milliseconds % 60
+  const minutes = parseInt(((milliseconds / 60) % 60).toString())
+  const hours = parseInt(((milliseconds / 3600) % 60).toString())
+  const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes
+    .toString()
+    .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
+
   return (
     <header className="flex w-full flex-row justify-evenly bg-gray-100 p-2">
       <div className="flex flex-row space-x-2">
@@ -25,7 +33,7 @@ const Header: FC = () => {
       </div>
       <div className="flex flex-row space-x-2">
         <Clock className="text-black" />
-        <p className="text-black">{time}</p>
+        <p className="text-black">{formattedTime}</p>
       </div>
       <div className="flex flex-row space-x-2">
         <Bomb className="text-red-700" />
